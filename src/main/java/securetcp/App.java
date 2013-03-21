@@ -14,6 +14,15 @@ import java.security.cert.Certificate;
  */
 public class App {
 
+	/*
+	*   - Server ilk bağlantıda sertifikasını göndercek
+	*   -client sertifikanın geçerli olup olmadığını kontrol edicek
+	*   -simetrik key ve session id üretip sertifikadaki public key ile key encrypt edip göndericek
+	*   -server session id ve key'i connection olarak tutucak
+	*   -bütün data geçişleri paylaşılan simetirk key ile chiper üzerinden şifrelnip açılacak
+	*
+	 */
+
 	private static final String passphrase = "123456";
 	private static final String alias = "securetcp";
 
